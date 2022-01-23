@@ -1,0 +1,21 @@
+.complete-btn {
+    display: inline-block;
+}
+
+.todo-item {
+    color: #011126;
+    font-weight: 200;
+    font-style: oblique;
+    display: inline;
+    font-size: 2rem;
+}
+
+.complete-btn {
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.trash-btn {
+    cursor: pointer;
+    margin-left: 2px;
+}
