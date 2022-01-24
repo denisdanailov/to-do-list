@@ -52,6 +52,10 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
 
     const submitTodoHandler = (e) => {
         e.preventDefault();
+
+        if (inputText.length == 0) {
+            inputText = 'empty'
+        }
         setTodos([
             ...todos, { text: inputText, completed: false, id: Math.random() * 1000 }
         ]);

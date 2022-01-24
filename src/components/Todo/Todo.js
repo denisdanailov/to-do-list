@@ -2,6 +2,7 @@ import React from "react";
 import './Todo.css';
 import CheckIcon from '@mui/icons-material/Check';
 import ClearIcon from '@mui/icons-material/Clear';
+
 const Todo = ( { text, todo,  todos, setTodos }) => {
 
     const deleteHandler = () => {
@@ -10,13 +11,15 @@ const Todo = ( { text, todo,  todos, setTodos }) => {
 
     const completeHandler = () => {
         setTodos(todos.map(item => {
+           
             if (item.id === todo.id) {
                 return {
-                    ...item, completed: !item.completed, text: 'check'
+                    ...item, completed: !item.completed, text: 'complete'
                 };
             }
             
             return item; 
+            
         }));
        
     };
@@ -28,6 +31,11 @@ const Todo = ( { text, todo,  todos, setTodos }) => {
             <CheckIcon onClick={completeHandler} className="complete-btn" fontSize="medium">complete</CheckIcon>
             <ClearIcon onClick={deleteHandler} className="trash-btn" fontSize="medium"></ClearIcon>
             </ul>
+            <div>{todos.map(item => {
+                 if (item.completed === true) {
+                     <h1>{item.text}</h1>
+                 }
+            })} </div>
         </div>
     );
 }
