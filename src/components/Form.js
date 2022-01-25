@@ -15,25 +15,25 @@ const useStyles = makeStyles({
     input: {
         background: 'grey',
         color: 'white',
-        width: '200px',
+        width: '300px',
         height: '40px',
-        borderRadius: '20px',
-        borderStyle: 'none',
-
-
+        
+        
+        borderColor: 'white',
+        border: '1px solid'
     },
 
     addBtn: {
         
         background: '#525252',
         color: 'white',
-        fontSize: '1rem',
+        fontSize: '1.1rem',
         marginLeft: '5px',
         cursor: 'pointer',
         borderStyle: 'solid',
         border: '1px',
         borderColor: 'white',
-        borderRadius: '20px',
+        
         padding: '10px 20px 10px 20px'
         
 

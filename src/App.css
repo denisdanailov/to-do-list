@@ -1,6 +1,6 @@
 .root {
   text-align: center;
-  background-color: #475D75;
+  background-image: url('../public/assets/paper-1.jpg');
   height: 100vh;
   
   
@@ -8,19 +8,20 @@
 
 
 .header {
-  background-color: #282c34;
-  opacity: 80%;
+  background-color: #393E40;
+  opacity: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-family: 'Fredericka the Great', cursive;
   color: white;
   border-bottom:  2px solid white;
 }
 
 .item-section {
- background-color: #9CAABA;
+ 
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -28,7 +29,8 @@
 }
 
 .footer {
-  background-color: #282c34;;
+  background-color: #393E40;;
+  opacity: 60%;
   position:absolute;
   bottom:0;
   width:100%;
